@@ -1,0 +1,355 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #1d1d1f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    height: 9.5vh;
+    min-height: 8vh;
+    width: 100%;
+    z-index: 5;
+    background-color: #1d1d1f;
+    border-bottom: 1px solid #fff;
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid #fff;
+      }
+      
+      .logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 15%;
+        height: 100%;
+        border-right: 1px solid #fff;
+      }
+      
+      .logo-box img {
+        width: 90%;
+        height: auto;
+        margin: 1%;
+      }
+      
+      .main-box {
+        flex: 85%;
+        height: 100%;
+        width: 80%;
+        margin: 0;
+      }
+      
+      .top-box {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        background-color: #006600;
+      }
+      
+      .motto {
+        display: inline-block;
+        position: relative;
+        top: 20%;
+        padding-left: 1%;
+        font-weight: 1000;
+        font-size: 20px;
+        color: white;
+      }
+      
+      .SM-icons {
+        display: inline-block;
+        position: absolute;
+        height: 90%;
+        min-width: 15%;
+        width: fit-content;
+        top: 1;
+        right: 15%;
+      }
+      
+      .SM-icons a {
+        cursor: pointer;
+      }
+      
+      .fls-3 {
+        transition: 0.5s ease-in-out;
+      }
+      
+      .fls-4 {
+        transition: 0.5s ease-in-out;
+      }
+      
+      .SM-icons a:hover .fls-3 {
+        fill: #4267b2;
+      }
+      
+      .SM-icons a:hover .fls-4 {
+        fill: #fff;
+      }
+      
+      .lls-3 {
+        transition: 0.5s ease-in-out;
+      }
+      
+      .lls-4 {
+        transition: 0.5s ease-in-out;
+      }
+      
+      .SM-icons a:hover .lls-3 {
+        fill: #0077b5;
+      }
+      
+      .SM-icons a:hover .lls-4 {
+        fill: #fff;
+      }
+      
+      .yls-3 {
+        transition: 0.5s ease-in-out;
+      }
+      
+      .yls-4 {
+        transition: 0.5s ease-in-out;
+      }
+      
+      .SM-icons a:hover .yls-3 {
+        fill: #ff0000;
+      }
+      
+      .SM-icons a:hover .yls-4 {
+        fill: #fff;
+      }
+      
+      .SM-icons svg {
+        margin-left: 10%;
+        height: 100%;
+        width: auto;
+      }
+      
+      .email {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 17.5%;
+      }
+      
+      .email svg {
+        display: inline;
+        position: relative;
+        height: 7.5vw;
+        width: 7.5vw;
+      }
+      
+      .email a {
+        cursor: pointer;
+        display: inline;
+        padding-left: 2.5%;
+        font-weight: 1000;
+        font-size: 0.75vw;
+        vertical-align: middle;
+        color: white;
+      }
+      
+      .bottom-box {
+        display: flex;
+        width: 100%;
+        height: 60%;
+      }
+      
+      .menu-box {
+        display: flex;
+        flex: 82.5%;
+      }
+      
+      .links {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: auto 0;
+        font-size: 1.5vw;
+        font-weight: 1000;
+      }
+      
+      .link-wrapper {
+        margin-left: 25;
+        margin-right: 25;
+        position: relative;
+      }
+      
+      .link-wrapper a {
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
+        text-decoration: none;
+        transition: 0.3s ease;
+      }
+      
+      .link-wrapper a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 3px;
+        border-radius: 10px;
+        background-color: #006600;
+        transition: 0.3s ease;
+      }
+      
+      .link-wrapper a:hover {
+        color: #006600;
+      }
+      
+      .link-wrapper a:hover::after {
+        background-color: #006600;
+        width: 100%;
+      }
+      
+      #active {
+        color: #006600;
+      }
+      
+      .call-box {
+        display: flex;
+        flex: 18.5%;
+        border-left: 1px solid #fff;
+      }
+      
+      .call-box svg {
+        margin: auto 4%;
+        width: auto;
+        height: 90%;
+      }
+      
+      .call-box svg circle {
+        transition: 0.25s ease-in-out;
+      }
+      
+      .call-box svg path {
+        transition: 0.25s ease-in-out;
+      }
+      
+      .call-box:hover circle {
+        fill: #1d1d1f;
+      }
+      
+      .call-box:hover #p1 {
+        fill: #1d1d1f;
+        stroke: #006600;
+      }
+      
+      .call-box:hover #p2 {
+        fill: #1d1d1f;
+        stroke: #006600;
+      }
+      
+      .call-box:hover #p3 {
+        fill: #006600;
+        stroke: #006600;
+      }
+      
+      .call-box:hover #p4 {
+        fill: #1d1d1f;
+        stroke: #006600;
+      }
+      
+      .call-box:hover #p5,
+      .call-box:hover #p6,
+      .call-box:hover #p7 {
+        fill: #006600;
+        stroke: #006600;
+      }
+      
+      .call {
+        width: 80%;
+        height: 80%;
+      }
+      
+      .call p {
+        font-size: 0.9vw;
+        font-weight: 1000;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 5%;
+      }
+      
+      .call a {
+        cursor: pointer;
+        font-size: 1.25vw;
+        font-weight: 1000;
+        margin-left: 5%;
+        transition: color 0.25s ease-in-out;
+      }
+      
+      .call a:hover {
+        color: #006600;
+      }
+  }
+
+.container{
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    height: fit-content;
+    padding: 0.5%;
+}
+
+.inputs{
+    height: 25% ;
+    width: 100%;
+}
+
+input{
+    font-size: 1.25vw;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.25);
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+select{
+    font-size: 1.25vw;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.25);
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+option{
+    background-color: #1d1d1f;
+}
+
+table{
+    font-size: 1.25vw;
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+}
+
+input[type="button"]{
+    cursor: default;
+
+}
+
+.right{
+    width: 60%;
+    height: 50%;
+}
